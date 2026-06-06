@@ -28,7 +28,7 @@ function App() {
     setAnalysis(null);
 
     try {
-      const BACKEND_URL = 'http://localhost:5000';
+      const BACKEND_URL = 'https://cp-analyzer-backend-h59d.onrender.com';
 
       const [userRes, ratingRes, subRes, analysisRes] = await Promise.all([
         axios.get(`${BACKEND_URL}/api/test?handle=${username}`),
